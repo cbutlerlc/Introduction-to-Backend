@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Post Management</title> 
+</head> 
+<body> 
+<h1>Post Management</h1> 
+<button id="loadPosts">Display Posts</button> 
+<div id="posts" aria-live="polite"></div> 
+
+<h1>User Management</h1> 
+<button id="loadUsers">Display Users</button> 
+<div id="users" aria-live="polite"></div> 
+
+<form id="postForm">
+
+        <label for="name">Post name:</label>
+        <input type="text" id="name" required>
+
+        <br><br>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" required>
+
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+
+        <br><br>
+
+        <label for="createdBy">Created by:</label>
+        <select id="createdBy" required>
+            <option value="">Select a user</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Create Post</button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <script src="/app.js" defer></script>
+
+</body>
+</html>

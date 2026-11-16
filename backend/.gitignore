@@ -1,0 +1,19 @@
+bower_components
+
+.lock-wscript
+
+build/Release
+
+node_modules/
+jspm_packages/
+
+web_modules/
+
+*.tsbuildinfo
+
+.npm
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
